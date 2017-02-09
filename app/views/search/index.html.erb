@@ -1,0 +1,8 @@
+<h1>16 events for March</h1>
+
+<% @events.each do |event| %>
+  <%= event.title %>
+  <%= event.venue %> <%= event.url %>
+  <%= event.address %>
+  <%= event.attendees %>
+<% end %>
