@@ -228,6 +228,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   launchy
+  nokogiri
   omniauth-eventful
   pry
   rails (= 4.2.5.1)

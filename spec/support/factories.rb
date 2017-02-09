@@ -1,3 +1,3 @@
-FactoryGirl.define do
-  <factories for each model go here>
-end
+# FactoryGirl.define do
+#   <factories for each model go here>
+# end

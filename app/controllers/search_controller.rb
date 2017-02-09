@@ -1,6 +1,7 @@
 class SearchController < ApplicationController
   def index
-    @names = EventfulService.names
-    binding.pry
+    search = EventfulService.new
+    @names = search.names
+    # binding.pry
   end
 end
