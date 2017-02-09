@@ -11,7 +11,7 @@ class EventService
       req.params[:date] = "March"
       req.params[:sort_order] = 'popularity'
     end
-    binding.pry
+    events = JSON.parse(response.body)['events']
     # events = JSON.parse(response.body)
   end
 
