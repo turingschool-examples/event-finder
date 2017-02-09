@@ -1,4 +1,4 @@
-class SearchController < AppicationController
+class SearchController < ApplicationController
 
   def index
     

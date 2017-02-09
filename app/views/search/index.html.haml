@@ -1,0 +1,10 @@
+h1= #{@results.count} events for March
+
+- @results.each do |result|
+  .event
+    p= result.name
+    p= result.date
+    p= result.description
+    = link_to result.venue_name, "#{result.venue_url}" 
+    p= result.venue_address
+    
