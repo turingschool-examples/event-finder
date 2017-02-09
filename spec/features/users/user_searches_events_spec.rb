@@ -9,7 +9,7 @@ RSpec.describe "User" do
       click_on "Find Events"
 
       expect(current_path).to eq('/search')
-      expect(page).to have_content("16 events for March")
+      expect(page).to have_content("events for March")
       expect(page).to have_selector('.events')
       within first('.events') do
         expect(page).to have_selector('.event_name')

@@ -1,13 +1,13 @@
-<h1>16 events for March</h1>
+<h1><%= @events[0].count %> events for March</h1>
 
 <section>
-  <% @events.each do |event| %>
+  <% @events[0].each do |event| %>
   <ol class='events'>
-    <li class='event_name'><%= event.title %></li>
-    <li>Start Time:<%= event.date_time %></li>
-    <li>Description: <%= event.description %></li>
-    <li>Venue: <%= event.venue_name %></li>
-    <li>Address: <%= event.venue_address %></li>
+    <li class='event_name'><h1><%= event.title %></h1></li>
+    <li class='time'>Start Time:<%= event.date_time %></li>
+    <li class='description'>Description: <%= event.description %></li>
+    <li class='venue_name'>Venue: <%= link_to event.venue, event.url %></li>
+    <li class='venue_address'>Address: <%= event.venue_address %></li>
   </ol>
   <% end %>
 </section>
