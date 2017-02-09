@@ -2,6 +2,9 @@ require 'rails_helper'
 
 describe "As a user" do
   context "when I fill in my zipcode and click on 'Find Events'" do
+    before do
+      @events = JSON.parse(Faraday.get("http://api.eventful.com/json/events/search?location=#{zipcode}&date=March&page_size=16&sort_order=popularity&app_key=#{ENV["eventful_app_key"]}").body)["events"]["event"]
+    end
     it "I should see a list of events" do
       visit root_path
 
