@@ -1,2 +1,10 @@
 %h2
-  = "16 Events for March"
+  = "#{@events.count} Events for March"
+
+- @events.each do |event|
+  = "Event: #{event.title}"
+  = "Date: #{event.date}"
+  = "Time: #{event.time}"
+  = "Description: #{event.description}"
+  = "Venue: #{event.venue}"
+  = "Venue Address: #{event.venue_address}"
