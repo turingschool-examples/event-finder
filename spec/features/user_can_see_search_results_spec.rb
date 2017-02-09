@@ -3,11 +3,17 @@ require 'rails_helper'
 describe "User" do
   it "can search for events by zipcode" do
     # As a user, 
+    visit root_path
 
-    # When I fill in the search with 80202, 
-    # And I click Find Events, 
+    within("search-field") do
+      # When I fill in the search with 80202, 
+      fill_in "80202"
+      # And I click Find Events, 
+      click_on "Find Events"
+    end
     # The current path is `/search`,
-    
+    expect(current_path).to be('/search')
+
   end
 end
 # And I can see a list of 16 events with a header `16 events for March', sorted by popularity. 
