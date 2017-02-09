@@ -13,9 +13,8 @@
       <tr>
         <td><%= event.name %></td>
         <td><%= event.date_time %></td>
-        <td><%= event.description %></td>
-        <td><%= event.venue_name %></td>
-        <td><%= event.venue_url %></td>
+        <td><%= truncate(event.description, length: event.description_limit) %></td>
+        <td><%= link_to event.venue_name, event.venue_url %></td>
         <td><%= event.venue_address %></td>
       </tr>
     <% end %>

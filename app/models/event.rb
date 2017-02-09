@@ -1,4 +1,6 @@
 class Event
+  DESCRIPTION_CUT = 140
+
   def initialize(raw_event_details)
     @_name = raw_event_details["title"]
     @_date_time = raw_event_details["start_time"]
@@ -31,4 +33,9 @@ class Event
   def venue_url
     @_venue_url
   end
+
+  def description_limit
+    DESCRIPTION_CUT
+  end
+
 end
