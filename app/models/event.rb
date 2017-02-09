@@ -19,7 +19,7 @@ class Event
   end
 
   def description
-    @_description
+    @_description || "No description"
   end
 
   def venue_name
