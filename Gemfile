@@ -13,6 +13,13 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
   gem 'byebug'
   gem 'rspec-rails', '~> 3.5'
+  gem 'capybara'
+  gem 'faraday'
+end
+
+group :test do
+  gem 'vcr'
+  gem 'webmocks'
 end
 
 group :development do
