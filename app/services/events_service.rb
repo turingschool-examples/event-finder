@@ -1,7 +1,9 @@
 class EventsService
 
-  def self.find_by_zipcode
-    events = Faraday.get("http://eventful.com/events?q=music&l=92103&within=10&units=miles")
+  def self.find_by_zipcode(zipcode)
+    response = Faraday.get("http://eventful.com/events?q=music&l=#{zipcode}/client_id=#{ENV["CLIENT_ID"]}")
     byebug
+    events = JSON.parse(response.bodt)
+
   end
 end
