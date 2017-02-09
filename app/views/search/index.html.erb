@@ -1,8 +1,9 @@
 <% @events.each do |event| %>
-
-  <%= event.name %>
-  <%= event.time %>
-  <%= event.descripton %>
-  <%= event.venue_name %>
-  <%= event.venue_address %></br>
+  <ul>
+    <li>Event Name: <%= event.name %></li>
+    <li>Date & Time:<%= event.time %></li>
+    <li>Description: <%= event.descripton %></li>
+    <li>Venue Name: <%= event.venue_name %></li>
+    <li>Venue Address: <%= event.venue_address %></li></br>
+  </ul>
 <% end %>

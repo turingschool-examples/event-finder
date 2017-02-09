@@ -5,7 +5,6 @@ class SearchController < ApplicationController
     parsed = JSON.parse(response.body, symbolize_names: true)[:events][:event]
 
     @events = Event.get_events(parsed)
-    binding.pry
   end
 end
 
