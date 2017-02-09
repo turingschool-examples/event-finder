@@ -5,13 +5,13 @@ describe "When a user searchs for an event" do
     VCR.use_cassette("eventful_find_by_zip") do
       visit root_path
 
-      fill_in :q, :with => "80203"
+      fill_in :q, :with => "80202"
 
       click_on "Find Events"
 
       expect(current_path).to eq '/search'
       expect(page).to have_content "16 events for March"
-      expect(page).to have_
+      expect(page).to have_selector('.event', count: 16)
       expect(page).to have_content "Experience Hendrix"
       expect(page).to have_content "2017-03-07 19:30:00"
       expect(page).to have_link "Paramount Theatre"

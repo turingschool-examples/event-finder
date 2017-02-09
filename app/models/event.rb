@@ -20,8 +20,8 @@ class Event
     return description[0..140] if description
   end
 
-  def self.search_by_zip
-    response = EventfulService.search_by_zip
+  def self.search_by(zip)
+    response = EventfulService.search_by(zip)
     response.map do |event|
       new(event)
     end
