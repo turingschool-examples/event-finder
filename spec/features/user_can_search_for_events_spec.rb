@@ -7,7 +7,7 @@ require "rails_helper"
 # And I can see a list of 16 events with a header `16 events for March', sorted by popularity.
 # For each event I can see the Event name, date & time, description (shortened to 140 characters), venue name (url to the venue page), venue address.
 
-RSpec.describe 'Search' do, type: :feature
+RSpec.feature 'Search', type: :feature do
   scenario "user searches for events" do
     it 'returns matching events' do
       visit root_path
