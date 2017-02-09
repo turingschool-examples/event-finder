@@ -5,7 +5,7 @@ class Events
   def initialize(attributes={})
     @title         = attributes['title']
     @date_time     = attributes['start_time'] 
-    @description   = attributes['description']
+    @description   = format_description(attributes['description'])
     @venue         = attributes['venue_name']
     @venue_address = attributes['venue_address']
     @url           = attributes['venue_url']
@@ -17,6 +17,14 @@ class Events
       event[1].map do |eve|
         new(eve)
       end
+    end
+  end
+
+  def format_description(desc)
+    if desc 
+      return desc[0...139]
+    else
+      return "No description."
     end
   end
 
