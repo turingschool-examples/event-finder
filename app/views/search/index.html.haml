@@ -1,0 +1,12 @@
+%h2
+  = "#{@events.count} Events for March"
+
+- @events.each do |event|
+  %article.event
+    = "Event: #{event.title}"
+    = "Date: #{event.date.to_formatted_s(:long_ordinal)}"
+    = "Time: #{event.time.to_formatted_s(:time)}"
+    = "Description: #{event.description}"
+    = "Venue: #{event.venue}"
+    = link_to(event.venue, event.venue_url)
+    = "Venue Address: #{event.venue_address}"
