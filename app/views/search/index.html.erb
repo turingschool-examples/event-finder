@@ -3,6 +3,11 @@
 <section>
   <% @events.each do |event| %>
   <ol class='events'>
+    <li class='event_name'><%= event.title %></li>
+    <li>Start Time:<%= event.date_time %></li>
+    <li>Description: <%= event.description %></li>
+    <li>Venue: <%= event.venue_name %></li>
+    <li>Address: <%= event.venue_address %></li>
   </ol>
   <% end %>
 </section>
