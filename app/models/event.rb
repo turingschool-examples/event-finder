@@ -10,9 +10,10 @@ class Event
   end
 
   def self.list(params)
-    response = EventService.gather_events(params)
+    response = EventService.new.gather_events(params)
+    
     byebug
-    response.each do |event|
+    .each do |event|
       new(event)
     end
   end
