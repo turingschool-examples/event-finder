@@ -1,6 +1,6 @@
 <div class = "container">
   <h1>List of most popular events for March 2017</h1>
-  <h2>Top 16</h2>
+  <h2>Event count: 16</h2>
   <table>
     <tr>
       <th>Event name</th>
@@ -9,9 +9,14 @@
       <th>Venue name</th>
       <th>Venue address</th>
     </tr>
-    <% @events.each do |event|%>
+    <% @events.each do |event| %>
       <tr>
-        <td><%= event. %></td>
+        <td><%= event.name %></td>
+        <td><%= event.date_time %></td>
+        <td><%= event.description %></td>
+        <td><%= event.venue_name %></td>
+        <td><%= event.venue_url %></td>
+        <td><%= event.venue_address %></td>
       </tr>
     <% end %>
   </table>
