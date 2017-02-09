@@ -5,7 +5,6 @@ class SearchController < ApplicationController
     @events = response.map do |event|
       Event.new(event)
     end
-    byebug
   end
 end
 
