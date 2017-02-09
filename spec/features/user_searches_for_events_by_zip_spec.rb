@@ -24,10 +24,17 @@ describe 'User' do
 
       expect(current_path).to eq search_path
       expect(page).to have_content '16 events for March'
+      expect(page).to have_content 'Name:'
+      expect(page).to have_content 'Start Time:'
+      expect(page).to have_content 'Description:'
+      expect(page).to have_content 'Venue:'
+      expect(page).to have_content 'Venue Address:'
 
-      
-      
-
+      expect(page).to have_content 'Denver Winery Tour'
+      expect(page).to have_content 'Sun, 05 Mar 2017 11:00:00 +0000'
+      expect(page).to have_content 'Mile High Wine Tours is the best way to enjoy Denver'
+      expect(page).to have_content 'Mile High Wine Tours'
+      expect(page).to have_content 'Venue Address: 817 17th St.'
     end
   end
 end

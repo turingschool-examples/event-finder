@@ -23,4 +23,8 @@ class Event
   def abbreviated_description
     description[0..139] if description
   end
+
+  def pretty_start_time
+    DateTime.parse(start_time).inspect
+  end
 end
