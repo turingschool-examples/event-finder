@@ -7,11 +7,13 @@ class EventService
 
   def self.find_all_by_zip(zip)
     response = conn.get do |req|
-      req.params['app_key']  = ENV['event_finder_api_key']
-      req.params['location'] = zip
+      req.params['app_key']    = ENV['event_finder_api_key']
+      req.params['location']   = zip
+      req.params['date']       = 'March'
+      req.params['sort_order'] = 'popularity'
+      req.params['page_size'] =   16
     end
 
-    final = JSON.parse(response.body)['events']['event']
-    binding.pry
+    JSON.parse(response.body)['events']['event']
   end
 end
