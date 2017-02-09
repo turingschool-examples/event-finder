@@ -1,10 +1,12 @@
 <h1>16 events for March, sorted by popularity</h1>
 <% @events.each do |event| %>
-  <ul>
+  <ul style="list-style: none;">
+    <div class="container">
     <li>Event Name: <%= event.name %></li>
     <li>Date & Time:<%= event.time %></li>
     <li>Description: <%= event.descripton %></li>
     <li>Venue Name: <%= event.venue_name %></li>
-    <li>Venue Address: <%= event.venue_address %></li></br>
+    <li>Venue Address: <%= event.venue_address %></li>
+    </div>
   </ul>
 <% end %>

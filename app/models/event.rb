@@ -7,6 +7,7 @@ class Event
     @venue_name = data[:venue_name]
     @venue_address = data[:venue_address]
   end
+  
   def self.get_events(zip_code)
     Service.get_events(zip_code).map do |event|
       Event.new(event)
