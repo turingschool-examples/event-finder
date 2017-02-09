@@ -6,9 +6,6 @@ class Event
     @_description = raw_event_details["description"]
     @_venue_name = raw_event_details["venue_name"]
     @_venue_url = raw_event_details["venue_url"]
-    @_venue_address = build_address(raw_event_details)
-  end
-
-  def build_address(raw_event_details)
+    @_venue_address = raw_event_details["venue_address"]
   end
 end
