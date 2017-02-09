@@ -13,6 +13,7 @@ gem 'faraday'
 gem 'figaro'
 gem 'active_model_serializers', '~> 0.10.0'
 gem 'bcrypt', '~> 3.1.7'
+gem 'crack'
 
 group :development, :test do
   gem 'pry-state'
