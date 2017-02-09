@@ -8,7 +8,7 @@ RSpec.describe 'Event Search by location' do
 
       # When I fill in the search with 80202, 
       within('.navbar') do
-        fill_in 'q', with: '8202'
+        fill_in 'q', with: '80202'
       end
       # And I click Find Events, 
       click_on 'Find Events'
