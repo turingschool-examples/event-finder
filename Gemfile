@@ -15,6 +15,8 @@ gem 'figaro'
 group :development, :test do
   gem 'byebug'
   gem 'rspec-rails'
+  gem 'capybara'
+  gem 'launchy'
   gem 'shoulda-matchers'
   gem 'factory_girl_rails'
   gem 'database_cleaner'
