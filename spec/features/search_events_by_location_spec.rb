@@ -25,6 +25,11 @@ RSpec.describe 'Event Search by location' do
       expect(page).to have_content('Venue address')
       within("table") do
         expect(all("tr").count).to eq(17)
+        within("tr:nth-of-type(2)") do
+          within("td:nth-of-type(4)") do
+            expect(page).to have_link
+          end
+        end
       end
     end
   end
