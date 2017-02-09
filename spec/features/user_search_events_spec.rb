@@ -11,11 +11,11 @@ describe 'User search' do
       expect(page).to have_content("16 events for March")
       expect(page).to have_css('.event', count: 16)
       within('.event').first do
-        expect(page).to have_content("NAME")
-        expect(page).to have_content("DATE")
-        expect(page).to have_content("DESCRPTION")
-        expect(page).to have_link("VENUE NAME")
+        expect(page).to have_content("Lil Wayne")
+        expect(page).to have_content("2017-02-24 20:00:00")
+        expect(page).to have_content("700 14th Street")
+        expect(page).to have_link("Bellco Theatre (formerly Wells Fargo Theatre)")
       end
     end
   end
-end
+  
