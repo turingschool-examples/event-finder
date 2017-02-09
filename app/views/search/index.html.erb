@@ -1,21 +1,17 @@
-
-<!-- # And I can see a list of 16 events with a header `16 events for March', sorted by popularity.
-# For each event I can see the Event name, date & time, description (shortened to 140 characters), venue name (url to the venue page), venue address. -->
 <div class="container">
 
   <h1>Events</h1>
 
-  <%= "#{@events.count} events for March" %>
+  <h2><%= "#{@events.count} events for March" %></h2>
 
   <%= @events.each do |event| %>
     <h3><%= event.event_name %></h3>
-    <li><%= event.event_start_time %></li>
-    <li><%= event.event_description %></li>
-    <li><%= event.event_venue_name %></li>
-    <li><%= event.event_venue_address %></li>
-    <li><%= event.event_venue_url %></li>
+    <p><%=h truncate(event.event_description, :length => 140) %></p>
+    <ul>
+      <li>Event Date & Time: <%= event.event_start_time %></li>
+      <li>Venue Address: <%= event.event_venue_address %></li>
+      <li>Venue Website: <%= link_to "#{event.event_venue_name}", event.event_venue_url %></li>
+    </ul>
   <% end %>
-
-
 
 <div>

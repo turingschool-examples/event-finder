@@ -3,7 +3,7 @@ class EventsFinder
   attr_reader :event_name,
               :event_start_time,
               :event_description,
-              :event_veune_name,
+              :event_venue_name,
               :event_venue_address,
               :event_venue_url
 

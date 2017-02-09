@@ -1,12 +1,5 @@
 require 'rails_helper'
 
-# As a user,
-# When I fill in the search with 80202,
-# And I click Find Events,
-# The current path is `/search`,
-# And I can see a list of 16 events with a header `16 events for March', sorted by popularity.
-# For each event I can see the Event name, date & time, description (shortened to 140 characters), venue name (url to the venue page), venue address.
-
 RSpec.describe "Event Finder API", :type => :request do
 
   it "returns events by zip code" do
@@ -17,6 +10,5 @@ RSpec.describe "Event Finder API", :type => :request do
     expect(current_path).to eq('/search')
 
     expect(page).to have_content("16 Events for March")
-
   end
 end
