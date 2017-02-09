@@ -4,7 +4,7 @@ class EventfulService
     response = JSON.parse(raw_response.body, symbolize_names: true)[:events][:event]
   end
 
-  def from_number_to_name(month)
+  def self.from_number_to_name(month)
     (Time.now + ((month.to_i)-2).month).strftime("%B")
   end
 end

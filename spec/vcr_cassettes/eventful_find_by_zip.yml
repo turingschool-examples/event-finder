@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.eventful.com/json/events/search?app_key=Q5gxTfWsVGgbDX8r&page_size=16&sort_order=popularity&when=march&where=80202
+    uri: http://api.eventful.com/json/events/search?app_key=Q5gxTfWsVGgbDX8r&page_size=16&sort_order=popularity&when=March&where=80202
     body:
       encoding: US-ASCII
       string: ''
@@ -23,7 +23,7 @@ http_interactions:
       Content-Length:
       - '54714'
       Date:
-      - Thu, 09 Feb 2017 17:24:41 GMT
+      - Thu, 09 Feb 2017 17:55:34 GMT
       Server:
       - lighttpd/1.4.35
     body:
@@ -31,7 +31,7 @@ http_interactions:
       string: !binary |-
         eyJsYXN0X2l0ZW0iOm51bGwsInRvdGFsX2l0ZW1zIjoiMTQ3IiwiZmlyc3Rf
         aXRlbSI6bnVsbCwicGFnZV9udW1iZXIiOiIxIiwicGFnZV9zaXplIjoiMTYi
-        LCJwYWdlX2l0ZW1zIjpudWxsLCJzZWFyY2hfdGltZSI6IjAuMTA3IiwicGFn
+        LCJwYWdlX2l0ZW1zIjpudWxsLCJzZWFyY2hfdGltZSI6IjAuMDI0IiwicGFn
         ZV9jb3VudCI6IjEwIiwiZXZlbnRzIjp7ImV2ZW50IjpbeyJ3YXRjaGluZ19j
         b3VudCI6bnVsbCwib2xzb25fcGF0aCI6IkFtZXJpY2EvRGVudmVyIiwiY2Fs
         ZW5kYXJfY291bnQiOm51bGwsImNvbW1lbnRfY291bnQiOm51bGwsInJlZ2lv
@@ -1246,5 +1246,5 @@ http_interactions:
         c2ljLWhhbGwtL1YwLTAwMS0wMDIxOTIyNDYtOT91dG1fc291cmNlPWFwaXMm
         dXRtX21lZGl1bT1hcGltJnV0bV9jYW1wYWlnbj1hcGljIn1dfX0K
     http_version: 
-  recorded_at: Thu, 09 Feb 2017 17:24:41 GMT
+  recorded_at: Thu, 09 Feb 2017 17:55:35 GMT
 recorded_with: VCR 3.0.3
