@@ -18,6 +18,7 @@ RSpec.describe "search for events" do
       click_on "Find Events"
 
       expect(current_path).to eq('/search')
+      expect(page).to have_content("16 events for March")
     end
 
   # And I can see a list of 16 events with a header `16 events for March', sorted by popularity. 
