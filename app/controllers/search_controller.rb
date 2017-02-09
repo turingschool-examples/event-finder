@@ -10,7 +10,7 @@ class SearchController < ApplicationController
 end
 
 class Event
-  attr_reader :title, :start_time, :descripton, :venue_name, :venue_address
+  attr_reader :name, :time, :descripton, :venue_name, :venue_address
   def initialize(data)
     @name = data[:title]
     @time = data[:start_time]
