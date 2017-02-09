@@ -12,7 +12,10 @@ RSpec.describe "Event Finder API", :type => :request do
   it "returns events by zip code" do
     visit '/'
 
-    fill_in "q",  with: "80203"
+    fill_in "q",  with: "80202"
     expect(current_path).to eq('/search')
+
+
+
   end
 end
