@@ -17,8 +17,8 @@ describe "As a user" do
     expect(Event.first).to be_a(Hash)
     expect(Event.count).to be(16)
     # For each event I can see the Event name, date & time, description (shortened to 140 characters), venue name (url to the venue page), venue address.
-    expect(Event.first).to have_content(:address)
-    expect(Event.first).to have_content(:description)
-    expect(Event.first).to have_content(:date)
+    expect(Event.first).to have_key(:address)
+    expect(Event.first).to have_key(:description)
+    expect(Event.first).to have_key(:date)
   end
 end
