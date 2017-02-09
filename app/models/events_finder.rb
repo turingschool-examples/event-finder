@@ -5,7 +5,7 @@ class EventsFinder
               :event_description,
               :event_venue_name,
               :event_venue_address,
-              :event_venue_url,
+              :event_venue_url
 
   def initialize(attributes = {})
     @event_name = attributes[:title]
@@ -21,9 +21,9 @@ class EventsFinder
     @event_date_time.to_s
   end
 
-  def sort_by_popularity
-    # Get all the events, order by [:going_count] desc.
-  end
+  # def sort_by_popularity
+  #   # Get all the events, order by [:going_count] desc.
+  # end
 
   def self.find_by_zip(zip)
     EventsService.find_by_zip(zip).map do |raw_event|
