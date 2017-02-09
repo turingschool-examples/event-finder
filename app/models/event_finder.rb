@@ -1,0 +1,2 @@
+class EventFinder
+end
