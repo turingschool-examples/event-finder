@@ -1,7 +1,7 @@
 class SearchController < ApplicationController
 
   def index
-    EventfulEvent.by_zipcode(token, params[:q])
+    @events = EventfulEvent.by_zipcode(token, params[:q])
   end
 
   def token

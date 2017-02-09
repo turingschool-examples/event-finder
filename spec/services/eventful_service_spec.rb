@@ -2,6 +2,9 @@ require 'rails_helper'
 
 describe EventfulService do
   context ".events" do
+    let!(:token) { ENV["EVENTFUL_API_KEY"] }
+    let!(:zipcode) { "80202" }
+
     scenario "returns a list of events", :vcr => true do
       raw_events = EventfulService.by_zipcode(token, zipcode)
       expect(raw_events).to be_an Array
