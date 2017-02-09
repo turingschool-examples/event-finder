@@ -1,0 +1,12 @@
+<%= @events.count %> events for March
+<% @events.each do |event| %>
+<% byebug  %>
+  <ul>
+    <li><%= event[:title] %></li>
+    <li><%= event[:] %></li>
+    <li><%= event[:start_time] %></li>
+    <li><%= event[:description] %></li>
+    <li><%= link_to event[:venue_name] %></li>
+    
+  </ul>
+<% end %>

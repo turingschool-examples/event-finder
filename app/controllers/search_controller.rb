@@ -8,8 +8,8 @@ class SearchController < ApplicationController
       p.params[:location] = zip
       p.params[:date] = date
     end
-
-
-
+    found = JSON.parse(response.body)
+    @events = found['events']['event']
+    # byebug
   end
 end
