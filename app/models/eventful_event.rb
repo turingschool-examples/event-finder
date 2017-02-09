@@ -2,7 +2,6 @@ class EventfulEvent
   attr_reader :title,
               :date,
               :start_time,
-              :description,
               :venue_name,
               :venue_url,
               :venue_address
@@ -23,4 +22,9 @@ class EventfulEvent
       self.new(raw_event)
     end
   end
+
+  def description
+    @description ? @description.truncate(140) : ""
+  end
+
 end
