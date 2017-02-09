@@ -9,7 +9,7 @@ describe "As a user" do
       click_on('Find Events')
 
       expect(current_path).to be('/search')
-      # expect(events.count).to eq(16)
+      expect(events.count).to eq(16)
       # expect(page).to have_content('16 events for March')
       # expect(events).to ----- be sorted by popularity ----
       # events.each do |event|
