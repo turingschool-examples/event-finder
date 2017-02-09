@@ -1,3 +1,4 @@
+require 'rails_helper'
 # As a user, 
 # When I fill in the search with 80202, 
 # And I click Find Events, 
