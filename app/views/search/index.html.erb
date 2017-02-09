@@ -1,0 +1,17 @@
+<div class="container">
+
+  <h1>Events</h1>
+
+  <h2><%= "#{@events.count} events for March" %></h2>
+
+  <%= @events.each do |event| %>
+    <h3><%= event.event_name %></h3>
+    <p><%=h truncate(event.event_description, :length => 140) %></p>
+    <ul>
+      <li>Event Date & Time: <%= event.formatted_date_time %></li>
+      <li>Venue Address: <%= event.event_venue_address %></li>
+      <li>Venue Website: <%= link_to "#{event.event_venue_name}", event.event_venue_url %></li>
+    </ul>
+  <% end %>
+
+<div>
