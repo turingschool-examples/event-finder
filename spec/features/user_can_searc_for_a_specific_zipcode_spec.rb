@@ -5,8 +5,8 @@ describe "zipcode search" do
 
     visit root_path
 
-    fill_in "Search by zip...", with: "80202"
-    click_on "Find_Events"
+    fill_in "q", with: "80202"
+    click_on "Find Events"
 
     expect(current_path).to eq("/search")
     expect(page).to have_content("16 events for March")

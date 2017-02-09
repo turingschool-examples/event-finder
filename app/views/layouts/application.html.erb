@@ -22,7 +22,7 @@
           <%= form_tag :search, method: :get, class: "form-inline" do %>
             <div class="form-group search-field">
               <%= text_field_tag :q, "Search by zip...", class: "form-control" %>
-              <%= submit_tag "Find Events", class: "btn btn-primary" %>
+              <%= submit_tag "Find Events", class: "btn btn-primary", id: "Find Events" %>
             </div>
           <% end %>
         </ul>
