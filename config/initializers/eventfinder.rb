@@ -1,1 +1,1 @@
-Eventfinder.key = ENV['eventfinder_api_key']
+# Eventfinder.key = ENV["eventfinder_api_key"]
