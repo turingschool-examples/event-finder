@@ -1,10 +1,10 @@
 require 'rails_helper'
 
 describe "As a user" do
-  describe "I see relevant events" do
+  it "I see relevant events" do
     # As a user,
     User.create(name: "John")
-    visit root_path
+    visit '/'
     # When I fill in the search with 80202,
     fill_in with: "80202"
     # And I click Find Events,
