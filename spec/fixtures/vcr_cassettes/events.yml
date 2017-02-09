@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.eventful.com/json/events/search?app_key=<EVENTFUL_API_KEY>&location=80202&sort_order=popularity
+    uri: http://api.eventful.com/json/events/search?app_key=<EVENTFUL_API_KEY>y&location=80202&sort_order=popularity
     body:
       encoding: US-ASCII
       string: ''
@@ -23,14 +23,49 @@ http_interactions:
       Content-Type:
       - text/javascript; charset=utf-8
       Content-Length:
-      - '32706'
+      - '182'
       Date:
-      - Thu, 09 Feb 2017 16:42:42 GMT
+      - Thu, 09 Feb 2017 17:21:41 GMT
       Server:
       - lighttpd/1.4.35
     body:
       encoding: UTF-8
-      string: '{"last_item":null,"total_items":"378","first_item":null,"page_number":"1","page_size":"10","page_items":null,"search_time":"0.11","page_count":"38","events":{"event":[{"watching_count":null,"olson_path":"America/Denver","calendar_count":null,"comment_count":null,"region_abbr":"CO","postal_code":"80202","going_count":null,"all_day":"0","latitude":"39.7427565","groups":null,"url":"http://denver.eventful.com/events/lil-wayne-boogie-wit-da-hoodie-marc-e-bassy-/E0-001-099079930-1?utm_source=apis&utm_medium=apim&utm_campaign=apic","id":"E0-001-099079930-1","privacy":"1","city_name":"Denver","link_count":null,"longitude":"-104.9940015","country_name":"United
+      string: '{"status":"Authentication Error","error":"1","description":"The application
+        key provided (<EVENTFUL_API_KEY>y) is not registered with Eventful.  A valid
+        application key is required."}
+
+'
+    http_version: 
+  recorded_at: Thu, 09 Feb 2017 17:21:41 GMT
+- request:
+    method: get
+    uri: http://api.eventful.com/json/events/search?app_key=<EVENTFUL_API_KEY>&location=%7B%22q%22=%3E%2280202%22%7D&sort_order=popularity
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.11.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/javascript; charset=utf-8
+      Content-Length:
+      - '32707'
+      Date:
+      - Thu, 09 Feb 2017 17:21:43 GMT
+      Server:
+      - lighttpd/1.4.35
+    body:
+      encoding: UTF-8
+      string: '{"last_item":null,"total_items":"378","first_item":null,"page_number":"1","page_size":"10","page_items":null,"search_time":"0.107","page_count":"38","events":{"event":[{"watching_count":null,"olson_path":"America/Denver","calendar_count":null,"comment_count":null,"region_abbr":"CO","postal_code":"80202","going_count":null,"all_day":"0","latitude":"39.7427565","groups":null,"url":"http://denver.eventful.com/events/lil-wayne-boogie-wit-da-hoodie-marc-e-bassy-/E0-001-099079930-1?utm_source=apis&utm_medium=apim&utm_campaign=apic","id":"E0-001-099079930-1","privacy":"1","city_name":"Denver","link_count":null,"longitude":"-104.9940015","country_name":"United
         States","country_abbr":"USA","region_name":"Colorado","start_time":"2017-02-24
         20:00:00","tz_id":null,"description":null,"modified":"2017-01-28 23:03:43","venue_display":"1","tz_country":null,"performers":{"performer":[{"creator":"motownrecords","linker":"evdb","name":"Lil
         Wayne","url":"http://concerts.eventful.com/Lil-Wayne?utm_source=apis&utm_medium=apim&utm_campaign=apic","id":"P0-001-000034578-0","short_bio":"Rap
@@ -254,5 +289,5 @@ http_interactions:
 
 '
     http_version: 
-  recorded_at: Thu, 09 Feb 2017 16:42:42 GMT
+  recorded_at: Thu, 09 Feb 2017 17:21:43 GMT
 recorded_with: VCR 3.0.3
