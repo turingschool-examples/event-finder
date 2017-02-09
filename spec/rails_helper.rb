@@ -31,7 +31,7 @@ ActiveRecord::Migration.maintain_test_schema!
 VCR.configure do |config|
   config.cassette_library_dir = Rails.root.join("spec", "fixtures", "vcr_cassettes")
   config.hook_into :webmock
-  # config.filter_sensitive_data('<STRAVA_CLIENT_ID>') { ENV["STRAVA_CLIENT_ID"] }
+  config.filter_sensitive_data('<EVENTFUL_API_KEY>') { ENV["EVENTFUL_API_KEY"] }
 end
 
 Shoulda::Matchers.configure do |config|
