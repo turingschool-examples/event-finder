@@ -18,4 +18,5 @@ describe 'User search' do
       end
     end
   end
+end
   

@@ -1,8 +1,8 @@
 class SearchController < ApplicationController
 
   def index
-    @result = EventfulService.search_by_zipcode(params[:q])    
-    byebug
+    response = EventfulService.find_by_zipcode(params[:q])
+    @results = ResultsPresenter.new(response)
   end
 
 end
