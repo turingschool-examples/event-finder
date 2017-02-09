@@ -5,14 +5,14 @@ describe "User" do
     # As a user, 
     visit root_path
 
-    within("search-field") do
+    within(".search-field") do
       # When I fill in the search with 80202, 
-      fill_in "80202"
+      fill_in "q", with: "80202"
       # And I click Find Events, 
       click_on "Find Events"
     end
     # The current path is `/search`,
-    expect(current_path).to be('/search')
+    expect(current_path).to eq('/search')
 
   end
 end
