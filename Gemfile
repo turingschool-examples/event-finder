@@ -12,6 +12,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'figaro'
 gem 'active_model_serializers', '~> 0.10.0'
 gem "haml-rails", "~> 0.9"
+gem "faraday"
 
 
 group :development, :test do
