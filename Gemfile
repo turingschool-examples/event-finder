@@ -9,9 +9,28 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'faraday'
+gem 'figaro'
+gem 'active_model_serializers', '~> 0.10.0'
+gem 'bcrypt', '~> 3.1.7'
+gem 'crack'
 
 group :development, :test do
-  gem 'byebug'
+  gem 'pry-state'
+  gem 'launchy'
+  gem 'rspec-rails', '~> 3.5'
+  gem 'rspec-json_expectations'
+  gem 'factory_girl_rails'
+  gem 'capybara'
+  gem 'database_cleaner'
+  gem 'faker'
+  gem 'shoulda-matchers', '~> 3.1'
+end
+
+group :test do
+  gem 'rack_session_access'
+  gem 'vcr'
+  gem 'webmock'
 end
 
 group :development do
