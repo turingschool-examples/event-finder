@@ -11,6 +11,7 @@ describe "When a user searchs for an event" do
 
       expect(current_path).to eq '/search'
       expect(page).to have_content "16 events for March"
+      expect(page).to have_
       expect(page).to have_content "Experience Hendrix"
       expect(page).to have_content "2017-03-07 19:30:00"
       expect(page).to have_link "Paramount Theatre"
