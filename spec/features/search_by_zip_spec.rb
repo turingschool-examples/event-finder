@@ -8,11 +8,9 @@ describe "As a user" do
       fill_in :q, :with => '80202'
       click_on('Find Events')
 
-      # events = JSON.parse(response.body)
-
-      expect(current_path).to eq('/search')
-      expect(events.count).to eq(16)
-      # expect(page).to have_content('16 events for March')
+      expect(current_path).to eq('/search') # passing!
+      expect(page).to have_content('16 Events for March') # passing!
+      expect(page).to have_css("h2", :count => 16) # test is failing correctly
       # expect(events).to ----- be sorted by popularity ----
       # events.each do |event|
         # expect(page).to have_content(event.name)

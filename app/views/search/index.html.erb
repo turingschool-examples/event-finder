@@ -1,3 +1,10 @@
 <h1>16 Events for March</h1>
 
-<%= @events %>
+<% @events.each do |event| %>
+  <h2><%= event["title"] %></h2>
+  <ul>
+    <li>Title:<%= event["venue_name"] %></li>
+    <li>Start Time:<%= event["start_time"] %></li>
+    <li>Number of Attendees: <%= event["going_count"] %></li>    
+  </ul>
+<% end %>
