@@ -10,6 +10,5 @@ class SearchController < ApplicationController
     end
     found = JSON.parse(response.body)
     @events = found['events']['event']
-    # byebug
   end
 end

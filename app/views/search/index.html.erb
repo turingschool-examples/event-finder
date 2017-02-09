@@ -1,11 +1,11 @@
 <%= @events.count %> events for March
 <% @events.each do |event| %>
   <ul>
-    <li><%= event['title'] %></li>
-    <li><%= event['start_time'].split[0] %></li>
-    <li><%= event['start_time'].split[-1] %></li>
-    <li><%= event['description'].truncate(140) unless event['description'].nil?%></li>
-    <li><%= link_to event['venue_name'] %></li>
-
+    <li>Title: <%= event['title'] %></li>
+    <li>Date: <%= event['start_time'].split[0] %></li>
+    <li>Start Time:<%= event['start_time'].split[-1] %></li>
+    <li>Description: <%= event['description'].truncate(140) unless event['description'].nil?%></li>
+    <li>Venue: <%= link_to event['venue_name'] %></li>
+    <li>Venue Address: <%= event['venue_address'] %></li>
   </ul>
 <% end %>
