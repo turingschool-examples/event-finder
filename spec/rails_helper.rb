@@ -11,7 +11,7 @@ require 'vcr'
 VCR.configure do |config|
   config.cassette_library_dir = Rails.root.join("spec","fixtures","vcr_cassettes")
   config.hook_into :webmock
-  # config.filter_sensitive_data("<SENSITIVE_DATA>") { ENV["SENSITIVE_DATA"] }
+  config.filter_sensitive_data("<EVENTFUL_API_KEY>") { ENV["EVENTFUL_API_KEY"] }
 end
 
 # Add additional requires below this line. Rails is not loaded until this point!

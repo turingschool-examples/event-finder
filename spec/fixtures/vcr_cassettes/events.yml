@@ -1,0 +1,258 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.eventful.com/json/events/search?app_key=<EVENTFUL_API_KEY>&location=80202&sort_order=popularity
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.eventful.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/javascript; charset=utf-8
+      Content-Length:
+      - '32706'
+      Date:
+      - Thu, 09 Feb 2017 16:42:42 GMT
+      Server:
+      - lighttpd/1.4.35
+    body:
+      encoding: UTF-8
+      string: '{"last_item":null,"total_items":"378","first_item":null,"page_number":"1","page_size":"10","page_items":null,"search_time":"0.11","page_count":"38","events":{"event":[{"watching_count":null,"olson_path":"America/Denver","calendar_count":null,"comment_count":null,"region_abbr":"CO","postal_code":"80202","going_count":null,"all_day":"0","latitude":"39.7427565","groups":null,"url":"http://denver.eventful.com/events/lil-wayne-boogie-wit-da-hoodie-marc-e-bassy-/E0-001-099079930-1?utm_source=apis&utm_medium=apim&utm_campaign=apic","id":"E0-001-099079930-1","privacy":"1","city_name":"Denver","link_count":null,"longitude":"-104.9940015","country_name":"United
+        States","country_abbr":"USA","region_name":"Colorado","start_time":"2017-02-24
+        20:00:00","tz_id":null,"description":null,"modified":"2017-01-28 23:03:43","venue_display":"1","tz_country":null,"performers":{"performer":[{"creator":"motownrecords","linker":"evdb","name":"Lil
+        Wayne","url":"http://concerts.eventful.com/Lil-Wayne?utm_source=apis&utm_medium=apim&utm_campaign=apic","id":"P0-001-000034578-0","short_bio":"Rap
+        / Hip Hop"},{"creator":"TaylorRea","linker":"evdb","name":"A Boogie Wit Da
+        Hoodie","url":"http://concerts.eventful.com/performers/a-boogie-wit-da-hoodie-/P0-001-014205592-7?utm_source=apis&utm_medium=apim&utm_campaign=apic","id":"P0-001-014205592-7","short_bio":"Funky
+        Trap"},{"creator":"TaylorRea","linker":"evdb","name":"Marc E. Bassy","url":"http://concerts.eventful.com/performers/marc-e-bassy-/P0-001-014205377-0?utm_source=apis&utm_medium=apim&utm_campaign=apic","id":"P0-001-014205377-0","short_bio":"Rapper"}]},"title":"Lil
+        Wayne  - A Boogie Wit Da Hoodie, Marc E Bassy","venue_address":"700 14th Street","geocode_type":"EVDB
+        Geocoder","tz_olson_path":null,"recur_string":null,"calendars":null,"owner":"evdb","going":null,"country_abbr2":"US","image":{"small":{"width":"48","url":"http://s2.evcdn.com/images/small/I0-001/017/996/581-5.jpeg_/lil-wayne-81.jpeg","height":"48"},"width":"48","caption":null,"medium":{"width":"128","url":"http://s2.evcdn.com/images/medium/I0-001/017/996/581-5.jpeg_/lil-wayne-81.jpeg","height":"128"},"url":"http://s2.evcdn.com/images/small/I0-001/017/996/581-5.jpeg_/lil-wayne-81.jpeg","thumb":{"width":"48","url":"http://s2.evcdn.com/images/thumb/I0-001/017/996/581-5.jpeg_/lil-wayne-81.jpeg","height":"48"},"height":"48"},"created":"2017-01-01
+        01:44:31","venue_id":"V0-001-000150709-5","tz_city":null,"stop_time":null,"venue_name":"Bellco
+        Theatre (formerly Wells Fargo Theatre)","venue_url":"http://denver.eventful.com/venues/bellco-theatre-formerly-wells-fargo-theatre-/V0-001-000150709-5?utm_source=apis&utm_medium=apim&utm_campaign=apic"},{"watching_count":null,"olson_path":"America/Denver","calendar_count":null,"comment_count":null,"region_abbr":"CO","postal_code":"80202","going_count":null,"all_day":"0","latitude":"39.7535091","groups":null,"url":"http://denver.eventful.com/events/born-osiris-/E0-001-098777881-2?utm_source=apis&utm_medium=apim&utm_campaign=apic","id":"E0-001-098777881-2","privacy":"1","city_name":"Denver","link_count":null,"longitude":"-104.9953151","country_name":"United
+        States","country_abbr":"USA","region_name":"Colorado","start_time":"2017-02-19
+        18:00:00","tz_id":null,"description":null,"modified":"2017-01-03 21:32:20","venue_display":"1","tz_country":null,"performers":{"performer":{"creator":"Outerloop","linker":"evdb","name":"Born
+        of Osiris","url":"http://concerts.eventful.com/Born-of-Osiris?utm_source=apis&utm_medium=apim&utm_campaign=apic","id":"P0-001-000101403-6","short_bio":"Progressive.
+        Epic. Crushing."}},"title":"Born of Osiris","venue_address":"1902 Blake Street","geocode_type":"EVDB
+        Geocoder","tz_olson_path":null,"recur_string":null,"calendars":null,"owner":"evdb","going":null,"country_abbr2":"US","image":{"small":{"width":"48","url":"http://s3.evcdn.com/images/small/I0-001/000/738/614-8.jpeg_/born-of-osiris-14.jpeg","height":"48"},"width":"48","caption":null,"medium":{"width":"128","url":"http://s3.evcdn.com/images/medium/I0-001/000/738/614-8.jpeg_/born-of-osiris-14.jpeg","height":"128"},"url":"http://s3.evcdn.com/images/small/I0-001/000/738/614-8.jpeg_/born-of-osiris-14.jpeg","thumb":{"width":"48","url":"http://s3.evcdn.com/images/thumb/I0-001/000/738/614-8.jpeg_/born-of-osiris-14.jpeg","height":"48"},"height":"48"},"created":"2016-12-19
+        23:51:48","venue_id":"V0-001-002192246-9","tz_city":null,"stop_time":null,"venue_name":"Summit
+        Music Hall","venue_url":"http://denver.eventful.com/venues/summit-music-hall-/V0-001-002192246-9?utm_source=apis&utm_medium=apim&utm_campaign=apic"},{"watching_count":null,"olson_path":"America/Denver","calendar_count":null,"comment_count":null,"region_abbr":"CO","postal_code":"80202","going_count":null,"all_day":"0","latitude":"39.7525","groups":null,"url":"http://denver.eventful.com/events/los-lobos-/E0-001-098371402-9?utm_source=apis&utm_medium=apim&utm_campaign=apic","id":"E0-001-098371402-9","privacy":"1","city_name":"Denver","link_count":null,"longitude":"-104.999","country_name":"United
+        States","country_abbr":"USA","region_name":"Colorado","start_time":"2017-02-17
+        21:00:00","tz_id":null,"description":" <br> &quot;We&#39;re a Mexican American
+        band, and no word describes America like immigrant. Most of usare children
+        of immigrants, so it&#39;s perhaps natural that the songs we create celebrate
+        America inthis way.&quot; So says Louie Perez, the &quot;poet laureate&quot;
+        and primary wordsmith of Los Lobos, whendescribing the songs on the band&#39;s
+        new album, Gates of Gold.The stories on Gates of Gold are snapshots of experiences
+        that Perez and his band mates havehad, based on where they are emotionally
+        and how they respond to evolving life circumstances.&quot;We live out loud
+        most of the time and share our life this way, but then there are more intrinsicthings
+        that happen, and our songs are part of the way we react to them. We sit down
+        andbasically tell people what has happened. We certainly didn&#39;t start
+        this project with aspirations tocreate the musical equivalent to great American
+        literary works.&quot;After celebrating their 40th anniversary with the cleverly
+        titled 2013 live album Disconnected InNew York City, the hard working, constantly
+        touring band David Hidalgo, Louie Perez, CesarRosas, Conrad Lozano and Steve
+        Berlin leaps headfirst into their fifth decade with an invitationto join them
+        as they open fresh and exciting new Gates of Gold, their first full length
+        studioalbum since 2010&#39;s Tin Can Trust (a Grammy nominee for Best Americana
+        Album) and secondwith Savoy/429 Records.The dynamic songwriting, deeply poetic
+        lyrics, thoughtful romantic and spiritual themes andeclectic blend of styles
+        on the 11 track collection has resulted in an American saga in the richliterary
+        tradition of legendary authors John Steinbeck and William Faulkner. Yet true
+        to form,these typically humble musical wolves started in on the project without
+        any grand vision ormusical roadmap. Over 30 years after Los Lobos&#39; major
+        label breakthrough How Will The WolfSurvive? - their 1984 album that ranks
+        #30 on Rolling Stones list of the 100 greatest albums ofthe 1980s their main
+        challenge when they get off the road and head back into the studio is, asBerlin
+        says, &quot;trying not to do stuff we&#39;ve already done. To a certain extent,
+        we are alwaysdrawing from the same multi-faceted paint box, and we sound like
+        what we sound like. We&#39;reproud of what we feel is an honest body of work.
+        We just want to keep finding new ways to saythings.&quot;In the band&#39;s
+        early recording days - those years just before and after &quot;La Bamba,&quot;
+        theirworldwide crossover hit from the 1987 film which reached #1 on the U.S.
+        and UK singles chart -they prepared for album recording sessions with top
+        producers like T-Bone Burnett with preproductionthat included multiple rehearsals
+        and &quot;outlining&quot; what the project was going to be.The more spontaneous
+        approach to writing and recording that they took on their 1992 MitchellFroom
+        co-produced set Kiko still exists today; Rosas says, &quot;When I listen to
+        our catalog, doingthings more spontaneously in the studio has led to some
+        of our best work.&quot; Unlike many bandsthat write, gather and catalog material
+        between studio releases, Los Lobos prefers to create theirmagic on the fly
+        when they decide it&#39;s time to record. Perez says, &quot;We never come
+        in with acache of 20 songs. Our thing is to write as we&#39;re recording.
+        It&#39;s like starting with a blank canvassevery time.&quot; The journey to
+        Gates of Gold began with Hidalgo bringing in a batch of ideas, outlines and
+        chordprogressions with no lyrics. As he and Perez began fleshing things out,
+        developing grooves,melodies and lyrical themes, Hidalgo, his son, drummer
+        David, Jr. and bassist Lozano begantracking those tunes. The collection opens
+        with the reflective, mid-tempo rocker &quot;Made ToBreak Your Heart,&quot;
+        featuring female vocalist Syd Straw, whose vibe was partially inspired byHidalgo&#39;s
+        love for Manassas, the early 70s blues-country-rock band created by Stephen
+        Stills.The moody, atmospheric rocker &quot;When We Were Free,&quot; whose
+        lyrics of what Berlin calls&quot;beautiful melancholy memories&quot; are underscored
+        with the increasing drama of booming drumsand distorted electric guitars.
+        Filled with hypnotic sound effects and cool vocal and guitardistortion (created
+        via an eight track analog Cascam cassette recorder!), the soulful, reflective&quot;There
+        I Go&quot; touches on the universal search for what Perez calls &quot;something
+        meaningful,though we&#39;re not always sure what it is.&quot;Further Hidalgo/Perez
+        collaborations include &quot;Too Small Heart,&quot; a raw and raucous nod
+        to bothLos Lobos garage band roots and the wild abandon of Jimi Hendrix; the
+        easy grooving folkrocker&quot;Song of the Sun,&quot; which taps into the elements
+        of life (water, fire, earth) and creationmyths while touching on the way we
+        choose to live in the present; the slow burning blues/rocker&quot;Magdalena,&quot;
+        inspired by the Biblical Mary Magdalene and visions of flowing robes; and
+        thefolk-influenced, image rich rocker title track &quot;Gates of Gold,&quot;
+        whose lyrical abstractions allowfor multiple earthly and spiritual interpretations.Perez
+        says, &quot;When I first started listening to the original demo Dave had,
+        the music spoke to meof rural America. The impression the lyrics give could
+        refer to the afterlife, i.e. the &quot;pearlygates,&quot; but I also was thinking
+        about the immigrant experience, the promise of a new life as onetravels across
+        borders, all the thoughts a person making that daring move might have connectedto
+        the dream of what America is. Our parents all wondered what lay beyond those
+        gates. On apersonal level, it&#39;s a reflection of where my band mates and
+        I are in our lives. We&#39;re all over 60now and looking towards the horizon
+        at our own mortality. We think often about what we&#39;vecontributed and what&#39;s
+        left. I don&#39;t know who the protagonist of the song is, but he&#39;s looking
+        atthose gates from a distance because what lies beyond is a mystery.&quot;As
+        Hidalgo and Perez began collaborating on their songs, Rosas, as per his trademark
+        &quot;lonewolf&quot; songwriting approach, took his basic tracks to his home
+        studio to complete the handful oftunes that flesh out the set. The singer,
+        guitarist and mandolin player&#39;s pieces include the raucousand bluesy,
+        garage band fired jam &quot;Mis-Treater Boogie Blues,&quot; the swampy folk-rock
+        blueslament &quot;I Believed You So&quot; and the swaying, sensual Latin Cumbia-styled
+        &quot;Poquito Para Aqui.&quot;The sole cover on Gates of Gold is the other
+        Spanish language tune, &quot;La Tumba,&quot; an accordionlaced folk piece
+        connected to the Mexican Norteno tradition (related to polka and corrodes)whose
+        theme, says Perez, is very dark, &quot;about following your lover to the tomb.&quot;
+        It&#39;s veryfamiliar to fans as a frequent staple of Los Lobos&#39; live
+        performances.Back in 2003, when Los Lobos was celebrating the 30th Anniversary
+        of their humble beginningsas a garage band in East L.A., Rolling Stone summed
+        up their distinctive, diverse, freewheelingfusion of rock, blues, soul and
+        Mexican folk music: &quot;This is what happens when five guys createa magical
+        sound, then stick togetherto see how far it can take them.&quot; Originally
+        called LosLobos del Este (de Los Angeles), a play on a popular norteno band
+        called Los Lobos del Norte,the group originally came together from three separate
+        units. Lead vocalist/guitarist Hidalgo,whose arsenal includes accordion, percussion,
+        bass, keyboards, melodic, drums, violin and banjo, met Perez at Garfield High
+        in East LA and started a garage band. Rosas, who had his own group,and Lozano
+        launched a power trio. &quot;But we all hung out because we were friends and
+        makingmusic was just the natural progression of things,&quot; says Perez,
+        the band&#39;s drummer. &quot;Like if youhang around a barbershop long enough,
+        you&#39;re going to get a haircut.&quot;Berlin is Los Lobos&#39; saxophonist,
+        flutist and harmonica player who met the band while still withseminal L.A.
+        rockers The Blasters. He joined the group after performing on and co-producing(with
+        T-Bone Burnett) their breakthrough 1983 EP And A Time To Dance. Los Lobos
+        werealready East L.A. neighborhood legends, Sunset Strip regulars and a Grammy
+        winning band(Best Mexican American/Tejano Music Performance) by the time they
+        recorded How Will theWolf Survive? Although the album&#39;s name and title
+        song were inspired by a National Geographicarticle about real life wolves
+        in the wild, the band saw obvious parallels with their struggle togain mainstream
+        rock success while maintaining their Mexican roots.Perez, once called their
+        powerhouse mix of rock, Tex-Mex, country, folk, R&B, blues andtraditional
+        Spanish and Mexican music &quot;the soundtrack of the barrio.&quot; Three
+        decades, two moreGrammys, the global success of &quot;La Bamba&quot; and thousands
+        of rollicking performances acrossthe globe later, Los Lobos is surviving quite
+        well -- and still jamming with the same rawintensity as they had when they
+        began in that garage in 1973. They don&#39;t get in the studio asoften as
+        they did a few decades ago Tin Can Trust came four years after their previous
+        albumof all originals, The Town and the City but when they do, the results
+        are every bit as culturallyrich, musically rocking and lyrically provocative
+        as they were back in the day.&quot;It&#39;s not always the easiest thing finding
+        time away from our touring schedule and families tofind time to make an album,&quot;
+        says Berlin, &quot;but recording Gates of Gold, I have to say it&#39;s great
+        tobe back in the proverbial saddle again. It reminds us of the fun we have
+        had making new musicover the years, and it&#39;s nice to have the opportunity
+        to create something of value.&quot;Perez adds, &quot;I find that the most
+        interesting part of songwriting and tracking a new album is thedifferential
+        between the way a song sounds to you at 2 a.m. and the way it may hit you
+        when it&#39;s11 a.m. and it reaches the light of day. We may love it just
+        as much or we may realize we can dobetter. It&#39;s always a process of discovering
+        more about ourselves and the music we love to make.It&#39;s not always easy
+        getting started again, but I love that moment in the process when the songsstart
+        to take on their own life and we can let the kid, so to speak, run out onto
+        the street and startfiguring things out for himself. The way songs reveal
+        themselves to us during these periods ofwriting and recording is my favorite
+        part of the Los Lobos recording experience.&quot;","modified":"2016-12-06
+        08:47:24","venue_display":"1","tz_country":null,"performers":{"performer":{"creator":"chuck","linker":"evdb","name":"Los
+        Lobos","url":"http://concerts.eventful.com/Los-Lobos?utm_source=apis&utm_medium=apim&utm_campaign=apic","id":"P0-001-000009100-1","short_bio":"Rock
+        / Chicano Rock"}},"title":"Los Lobos","venue_address":"1215 20th Street","geocode_type":"Zip
+        Code Based GeoCodes","tz_olson_path":null,"recur_string":null,"calendars":null,"owner":"evdb","going":null,"country_abbr2":"US","image":{"small":{"width":"48","url":"http://s1.evcdn.com/images/small/I0-001/003/711/940-0.jpeg_/los-lobos-40.jpeg","height":"48"},"width":"48","caption":null,"medium":{"width":"128","url":"http://s1.evcdn.com/images/medium/I0-001/003/711/940-0.jpeg_/los-lobos-40.jpeg","height":"128"},"url":"http://s1.evcdn.com/images/small/I0-001/003/711/940-0.jpeg_/los-lobos-40.jpeg","thumb":{"width":"48","url":"http://s1.evcdn.com/images/thumb/I0-001/003/711/940-0.jpeg_/los-lobos-40.jpeg","height":"48"},"height":"48"},"created":"2016-12-06
+        08:47:24","venue_id":"V0-001-008853052-6","tz_city":null,"stop_time":null,"venue_name":"Ophelia''s
+        Electric Soapbox","venue_url":"http://denver.eventful.com/venues/ophelias-electric-soapbox-/V0-001-008853052-6?utm_source=apis&utm_medium=apim&utm_campaign=apic"},{"watching_count":null,"olson_path":"America/Denver","calendar_count":null,"comment_count":null,"region_abbr":"CO","postal_code":"80202","going_count":null,"all_day":"0","latitude":"39.744362","groups":null,"url":"http://denver.eventful.com/events/thunder-down-under-/E0-001-097714434-4?utm_source=apis&utm_medium=apim&utm_campaign=apic","id":"E0-001-097714434-4","privacy":"1","city_name":"Denver","link_count":null,"longitude":"-104.990271","country_name":"United
+        States","country_abbr":"USA","region_name":"Colorado","start_time":"2017-02-11
+        19:30:00","tz_id":null,"description":null,"modified":"2016-11-09 14:46:58","venue_display":"1","tz_country":null,"performers":{"performer":{"creator":"spogo36","linker":"evdb","name":"Thunder
+        From Down Under","url":"http://eventful.com/performers/thunder-from-down-under-/P0-001-000122625-1?utm_source=apis&utm_medium=apim&utm_campaign=apic","id":"P0-001-000122625-1","short_bio":"Las
+        Vegas Entertainment / Male Revue"}},"title":"Thunder From Down Under","venue_address":"1621
+        Glenarm Place","geocode_type":"EVDB Geocoder","tz_olson_path":null,"recur_string":null,"calendars":null,"owner":"evdb","going":null,"country_abbr2":"US","image":{"small":{"width":"48","url":"http://s3.evcdn.com/images/small/I0-001/024/285/262-8.jpeg_/thunder-from-down-under-62.jpeg","height":"48"},"width":"48","caption":null,"medium":{"width":"128","url":"http://s3.evcdn.com/images/medium/I0-001/024/285/262-8.jpeg_/thunder-from-down-under-62.jpeg","height":"128"},"url":"http://s3.evcdn.com/images/small/I0-001/024/285/262-8.jpeg_/thunder-from-down-under-62.jpeg","thumb":{"width":"48","url":"http://s3.evcdn.com/images/thumb/I0-001/024/285/262-8.jpeg_/thunder-from-down-under-62.jpeg","height":"48"},"height":"48"},"created":"2016-11-09
+        14:46:58","venue_id":"V0-001-000198697-3","tz_city":null,"stop_time":null,"venue_name":"Paramount
+        Theatre","venue_url":"http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic"},{"watching_count":null,"olson_path":"America/Denver","calendar_count":null,"comment_count":null,"region_abbr":"CO","postal_code":"80202","going_count":null,"all_day":"0","latitude":"39.744362","groups":null,"url":"http://denver.eventful.com/events/dwight-yoakam-/E0-001-099134533-8?utm_source=apis&utm_medium=apim&utm_campaign=apic","id":"E0-001-099134533-8","privacy":"1","city_name":"Denver","link_count":null,"longitude":"-104.990271","country_name":"United
+        States","country_abbr":"USA","region_name":"Colorado","start_time":"2017-02-17
+        20:00:00","tz_id":null,"description":null,"modified":"2017-01-10 02:58:08","venue_display":"1","tz_country":null,"performers":{"performer":{"creator":"wild4yoakam","linker":"evdb","name":"Dwight
+        Yoakam","url":"http://concerts.eventful.com/Dwight-Yoakam?utm_source=apis&utm_medium=apim&utm_campaign=apic","id":"P0-001-000009028-8","short_bio":"Country"}},"title":"Dwight
+        Yoakam","venue_address":"1621 Glenarm Place","geocode_type":"EVDB Geocoder","tz_olson_path":null,"recur_string":null,"calendars":null,"owner":"evdb","going":null,"country_abbr2":"US","image":{"small":{"width":"48","url":"http://s3.evcdn.com/images/small/I0-001/002/038/754-4.jpeg_/dwight-yoakam-54.jpeg","height":"48"},"width":"48","caption":null,"medium":{"width":"128","url":"http://s3.evcdn.com/images/medium/I0-001/002/038/754-4.jpeg_/dwight-yoakam-54.jpeg","height":"128"},"url":"http://s3.evcdn.com/images/small/I0-001/002/038/754-4.jpeg_/dwight-yoakam-54.jpeg","thumb":{"width":"48","url":"http://s3.evcdn.com/images/thumb/I0-001/002/038/754-4.jpeg_/dwight-yoakam-54.jpeg","height":"48"},"height":"48"},"created":"2017-01-04
+        10:46:54","venue_id":"V0-001-000198697-3","tz_city":null,"stop_time":null,"venue_name":"Paramount
+        Theatre","venue_url":"http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic"},{"watching_count":null,"olson_path":"America/Denver","calendar_count":null,"comment_count":null,"region_abbr":"CO","postal_code":"80202","going_count":null,"all_day":"0","latitude":"39.744362","groups":null,"url":"http://denver.eventful.com/events/thunder-down-under-/E0-001-097714433-5?utm_source=apis&utm_medium=apim&utm_campaign=apic","id":"E0-001-097714433-5","privacy":"1","city_name":"Denver","link_count":null,"longitude":"-104.990271","country_name":"United
+        States","country_abbr":"USA","region_name":"Colorado","start_time":"2017-02-10
+        19:30:00","tz_id":null,"description":null,"modified":"2016-11-09 14:46:56","venue_display":"1","tz_country":null,"performers":{"performer":{"creator":"spogo36","linker":"evdb","name":"Thunder
+        From Down Under","url":"http://eventful.com/performers/thunder-from-down-under-/P0-001-000122625-1?utm_source=apis&utm_medium=apim&utm_campaign=apic","id":"P0-001-000122625-1","short_bio":"Las
+        Vegas Entertainment / Male Revue"}},"title":"Thunder From Down Under","venue_address":"1621
+        Glenarm Place","geocode_type":"EVDB Geocoder","tz_olson_path":null,"recur_string":null,"calendars":null,"owner":"evdb","going":null,"country_abbr2":"US","image":{"small":{"width":"48","url":"http://s3.evcdn.com/images/small/I0-001/024/285/262-8.jpeg_/thunder-from-down-under-62.jpeg","height":"48"},"width":"48","caption":null,"medium":{"width":"128","url":"http://s3.evcdn.com/images/medium/I0-001/024/285/262-8.jpeg_/thunder-from-down-under-62.jpeg","height":"128"},"url":"http://s3.evcdn.com/images/small/I0-001/024/285/262-8.jpeg_/thunder-from-down-under-62.jpeg","thumb":{"width":"48","url":"http://s3.evcdn.com/images/thumb/I0-001/024/285/262-8.jpeg_/thunder-from-down-under-62.jpeg","height":"48"},"height":"48"},"created":"2016-11-09
+        14:46:56","venue_id":"V0-001-000198697-3","tz_city":null,"stop_time":null,"venue_name":"Paramount
+        Theatre","venue_url":"http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic"},{"watching_count":null,"olson_path":"America/Denver","calendar_count":null,"comment_count":null,"region_abbr":"CO","postal_code":"80202","going_count":null,"all_day":"0","latitude":"39.744362","groups":null,"url":"http://denver.eventful.com/events/experience-hendrix-/E0-001-096806781-2?utm_source=apis&utm_medium=apim&utm_campaign=apic","id":"E0-001-096806781-2","privacy":"1","city_name":"Denver","link_count":null,"longitude":"-104.990271","country_name":"United
+        States","country_abbr":"USA","region_name":"Colorado","start_time":"2017-03-07
+        19:30:00","tz_id":null,"description":null,"modified":"2016-11-22 10:35:49","venue_display":"1","tz_country":null,"performers":{"performer":[{"creator":"moffkr","linker":"moffkr","name":"Billy
+        Cox","url":"http://concerts.eventful.com/performers/billy-cox-/P0-001-014206104-3?utm_source=apis&utm_medium=apim&utm_campaign=apic","id":"P0-001-014206104-3","short_bio":"American
+        bassist, best known for performing with Jimi Hendrix. Cox is the only surviving
+        member of Jimi Hendrix&#39;s three main bands."},{"creator":"wbrecords","linker":"moffkr","name":"Kenny
+        Wayne Shepherd","url":"http://concerts.eventful.com/Kenny-Wayne-Shepherd?utm_source=apis&utm_medium=apim&utm_campaign=apic","id":"P0-001-000038233-8","short_bio":"Blues
+        / Rock"},{"creator":"VMGMT","linker":"moffkr","name":"Jonny Lang","url":"http://concerts.eventful.com/Jonny-Lang?utm_source=apis&utm_medium=apim&utm_campaign=apic","id":"P0-001-000001960-9","short_bio":"Blues/Rock"},{"creator":"jmeunier","linker":"moffkr","name":"Dweezil
+        Zappa","url":"http://concerts.eventful.com/Dweezil-Zappa?utm_source=apis&utm_medium=apim&utm_campaign=apic","id":"P0-001-000091606-5","short_bio":"Awesome
+        Guitarist"},{"creator":"moffkr","linker":"moffkr","name":"Chris Layton","url":"http://concerts.eventful.com/performers/chris-layton-/P0-001-014206105-2?utm_source=apis&utm_medium=apim&utm_campaign=apic","id":"P0-001-014206105-2","short_bio":"American
+        drummer and software engineer who rose to fame as one of the founding members
+        of Double Trouble"},{"creator":"moffkr","linker":"moffkr","name":"Mato Nanji","url":"http://concerts.eventful.com/performers/mato-nanji-/P0-001-014206106-1?utm_source=apis&utm_medium=apim&utm_campaign=apic","id":"P0-001-014206106-1","short_bio":"Guitar
+        Extroidinaire for the Native American blues-rock band INDIGENOUS."},{"creator":"evdb","linker":"moffkr","name":"Noah
+        Hunt","url":"http://concerts.eventful.com/Noah-Hunt?utm_source=apis&utm_medium=apim&utm_campaign=apic","id":"P0-001-000596038-0","short_bio":"Country
+        / Folk"},{"creator":"MetalMaiden","linker":"moffkr","name":"Zakk Wylde","url":"http://concerts.eventful.com/Zakk-Wylde?utm_source=apis&utm_medium=apim&utm_campaign=apic","id":"P0-001-000004545-5","short_bio":"Awsome
+        guitar player that bleeds Black Label"},{"creator":"Zombalabelgroup","linker":"moffkr","name":"Buddy
+        Guy","url":"http://concerts.eventful.com/Buddy-Guy?utm_source=apis&utm_medium=apim&utm_campaign=apic","id":"P0-001-000014200-4","short_bio":"Blues
+        / Soul / Rock"}]},"title":"Experience Hendrix","venue_address":"1621 Glenarm
+        Place","geocode_type":"EVDB Geocoder","tz_olson_path":null,"recur_string":null,"calendars":null,"owner":"moffkr","going":null,"country_abbr2":"US","image":{"small":{"width":"48","url":"http://s1.evcdn.com/images/small/I0-001/035/188/972-8.jpeg_/billy-cox-72.jpeg","height":"48"},"width":"48","caption":null,"medium":{"width":"128","url":"http://s1.evcdn.com/images/medium/I0-001/035/188/972-8.jpeg_/billy-cox-72.jpeg","height":"128"},"url":"http://s1.evcdn.com/images/small/I0-001/035/188/972-8.jpeg_/billy-cox-72.jpeg","thumb":{"width":"48","url":"http://s1.evcdn.com/images/thumb/I0-001/035/188/972-8.jpeg_/billy-cox-72.jpeg","height":"48"},"height":"48"},"created":"2016-09-27
+        18:57:20","venue_id":"V0-001-000198697-3","tz_city":null,"stop_time":null,"venue_name":"Paramount
+        Theatre","venue_url":"http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic"},{"watching_count":null,"olson_path":"America/Denver","calendar_count":null,"comment_count":null,"region_abbr":"CO","postal_code":"80202","going_count":null,"all_day":"0","latitude":"39.744362","groups":null,"url":"http://denver.eventful.com/events/lisa-lampanelli-/E0-001-097880364-8?utm_source=apis&utm_medium=apim&utm_campaign=apic","id":"E0-001-097880364-8","privacy":"1","city_name":"Denver","link_count":null,"longitude":"-104.990271","country_name":"United
+        States","country_abbr":"USA","region_name":"Colorado","start_time":"2017-02-25
+        20:00:00","tz_id":null,"description":null,"modified":"2017-01-03 20:47:33","venue_display":"1","tz_country":null,"performers":{"performer":{"creator":"Lampanelli","linker":"evdb","name":"Lisa
+        Lampanelli","url":"http://eventful.com/performers/lisa-lampanelli-/P0-001-000021275-6?utm_source=apis&utm_medium=apim&utm_campaign=apic","id":"P0-001-000021275-6","short_bio":"Comedy''s
+        Lovable Queen of Mean"}},"title":"Lisa Lampanelli","venue_address":"1621 Glenarm
+        Place","geocode_type":"EVDB Geocoder","tz_olson_path":null,"recur_string":null,"calendars":null,"owner":"evdb","going":null,"country_abbr2":"US","image":{"small":{"width":"48","url":"http://s1.evcdn.com/images/small/I0-001/003/762/012-8.gif_/lisa-lampanelli-12.gif","height":"48"},"width":"48","caption":null,"medium":{"width":"128","url":"http://s1.evcdn.com/images/medium/I0-001/003/762/012-8.gif_/lisa-lampanelli-12.gif","height":"128"},"url":"http://s1.evcdn.com/images/small/I0-001/003/762/012-8.gif_/lisa-lampanelli-12.gif","thumb":{"width":"48","url":"http://s1.evcdn.com/images/thumb/I0-001/003/762/012-8.gif_/lisa-lampanelli-12.gif","height":"48"},"height":"48"},"created":"2016-11-16
+        12:21:46","venue_id":"V0-001-000198697-3","tz_city":null,"stop_time":null,"venue_name":"Paramount
+        Theatre","venue_url":"http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic"},{"watching_count":null,"olson_path":"America/Denver","calendar_count":null,"comment_count":null,"region_abbr":"CO","postal_code":"80202","going_count":null,"all_day":"0","latitude":"39.744362","groups":null,"url":"http://denver.eventful.com/events/nick-cave-and-bad-seeds-/E0-001-097350963-1?utm_source=apis&utm_medium=apim&utm_campaign=apic","id":"E0-001-097350963-1","privacy":"1","city_name":"Denver","link_count":null,"longitude":"-104.990271","country_name":"United
+        States","country_abbr":"USA","region_name":"Colorado","start_time":"2017-06-18
+        20:00:00","tz_id":null,"description":null,"modified":"2016-11-04 21:28:18","venue_display":"1","tz_country":null,"performers":{"performer":{"creator":"jfisher","linker":"evdb","name":"Nick
+        Cave and The Bad Seeds","url":"http://concerts.eventful.com/Nick-Cave-and-The-Bad-Seeds?utm_source=apis&utm_medium=apim&utm_campaign=apic","id":"P0-001-000009810-1","short_bio":"Alternative
+        / Rock"}},"title":"Nick Cave and The Bad Seeds","venue_address":"1621 Glenarm
+        Place","geocode_type":"EVDB Geocoder","tz_olson_path":null,"recur_string":null,"calendars":null,"owner":"evdb","going":null,"country_abbr2":"US","image":{"small":{"width":"48","url":"http://s2.evcdn.com/images/small/I0-001/000/283/405-7.jpg_/nick-cave-and-the-bad-seeds-05.jpg","height":"48"},"width":"48","caption":null,"medium":{"width":"128","url":"http://s2.evcdn.com/images/medium/I0-001/000/283/405-7.jpg_/nick-cave-and-the-bad-seeds-05.jpg","height":"128"},"url":"http://s2.evcdn.com/images/small/I0-001/000/283/405-7.jpg_/nick-cave-and-the-bad-seeds-05.jpg","thumb":{"width":"48","url":"http://s2.evcdn.com/images/thumb/I0-001/000/283/405-7.jpg_/nick-cave-and-the-bad-seeds-05.jpg","height":"48"},"height":"48"},"created":"2016-10-26
+        19:19:27","venue_id":"V0-001-000198697-3","tz_city":null,"stop_time":null,"venue_name":"Paramount
+        Theatre","venue_url":"http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic"},{"watching_count":null,"olson_path":"America/Denver","calendar_count":null,"comment_count":null,"region_abbr":"CO","postal_code":"80202","going_count":null,"all_day":"0","latitude":"39.744362","groups":null,"url":"http://denver.eventful.com/events/bush-/E0-001-099800352-9?utm_source=apis&utm_medium=apim&utm_campaign=apic","id":"E0-001-099800352-9","privacy":"1","city_name":"Denver","link_count":null,"longitude":"-104.990271","country_name":"United
+        States","country_abbr":"USA","region_name":"Colorado","start_time":"2017-06-06
+        20:00:00","tz_id":null,"description":null,"modified":"2017-02-05 06:30:29","venue_display":"1","tz_country":null,"performers":{"performer":{"creator":"sdultimate","linker":"evdb","name":"Bush","url":"http://concerts.eventful.com/performers/bush-/P0-001-000021030-5?utm_source=apis&utm_medium=apim&utm_campaign=apic","id":"P0-001-000021030-5","short_bio":"Alternative
+        / Grunge / Rock"}},"title":"Bush","venue_address":"1621 Glenarm Place","geocode_type":"EVDB
+        Geocoder","tz_olson_path":null,"recur_string":null,"calendars":null,"owner":"evdb","going":null,"country_abbr2":"US","image":{"small":{"width":"48","url":"http://s1.evcdn.com/images/small/I0-001/016/812/328-2.jpeg_/bush-28.jpeg","height":"48"},"width":"48","caption":null,"medium":{"width":"128","url":"http://s1.evcdn.com/images/medium/I0-001/016/812/328-2.jpeg_/bush-28.jpeg","height":"128"},"url":"http://s1.evcdn.com/images/small/I0-001/016/812/328-2.jpeg_/bush-28.jpeg","thumb":{"width":"48","url":"http://s1.evcdn.com/images/thumb/I0-001/016/812/328-2.jpeg_/bush-28.jpeg","height":"48"},"height":"48"},"created":"2017-01-24
+        14:17:02","venue_id":"V0-001-000198697-3","tz_city":null,"stop_time":null,"venue_name":"Paramount
+        Theatre","venue_url":"http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic"}]}}
+
+'
+    http_version: 
+  recorded_at: Thu, 09 Feb 2017 16:42:42 GMT
+recorded_with: VCR 3.0.3
