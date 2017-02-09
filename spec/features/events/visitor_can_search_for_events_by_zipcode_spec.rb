@@ -16,7 +16,7 @@ RSpec.describe do
         Net::HTTP.get_response(URI("http://api.eventful.com/json/events/search?&location=80202&sort_order=popularity&app_key=#{ENV["EVENTFUL_API_KEY"]}"))
         visit root_path
 
-        fill_in "search", with: 80202
+        fill_in :q, with: 80202
         click_on "Find Events"
         expect(current_path).to eq search_path
         expect(page).to have_content "16 Events for March"

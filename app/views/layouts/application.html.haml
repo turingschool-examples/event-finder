@@ -1,0 +1,24 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title EventFinder
+    = stylesheet_link_tag "application", media: "all"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+  %body
+    %nav.navbar.navbar-default{:role => "navigation"}
+      .navbar-header
+        %button.navbar-toggle{"data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
+          %span.sr-only Toggle navigation
+          %span.icon-bar
+          %span.icon-bar
+          %span.icon-bar
+        = link_to "EventFinder", root_path, class: "navbar-brand"
+      #bs-example-navbar-collapse-1.collapse.navbar-collapse
+        %ul.nav.navbar-nav
+          = form_tag :search, method: :get, class: "form-inline" do
+            .form-group.search-field
+              = text_field_tag :q, "Search by zip...", class: "form-control"
+              = submit_tag "Find Events", class: "btn btn-primary"
+    = yield
