@@ -12,9 +12,15 @@ RSpec.describe 'Event Search by location' do
     # And I click Find Events, 
     click_on 'Find Events'
 
-    expect(current_path).to eq()
-The current path is `/search`,
-And I can see a list of 16 events with a header `16 events for March', sorted by popularity. 
-For each event I can see the Event name, date & time, description (shortened to 140 characters), venue name (url to the venue page), venue address.
+    # The current path is `/search`,
+    expect(current_path).to eq(search_path)
+    # And I can see a list of 16 events with a header `16 events for March', sorted by popularity. 
+    expect(page).to have_content('Event count: 16')
+    # For each event I can see the Event name, date & time, description (shortened to 140 characters), venue name (url to the venue page), venue address.
+    expect(page).to have_content('Event name')
+    expect(page).to have_content('Date & Time')
+    expect(page).to have_content('Description')
+    expect(page).to have_content('Venue name')
+    expect(page).to have_content('Venue address')
   end
 end
