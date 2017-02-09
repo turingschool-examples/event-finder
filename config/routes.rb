@@ -4,5 +4,5 @@ Rails.application.routes.draw do
 
   post 'http://eventful.com/oauth/request_token', to: "sessions#create"
   get 'http://eventful.com/oauth/authorize', as: :event_login
-  post 'http://eventful.com/oauth/access_token'
+  post 'http://eventful.com/oauth/access_token', to: "sessions#create"
 end
