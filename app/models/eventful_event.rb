@@ -23,5 +23,4 @@ class EventfulEvent
       self.new(raw_event)
     end
   end
-
 end
