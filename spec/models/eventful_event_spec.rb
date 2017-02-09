@@ -6,7 +6,7 @@ describe EventfulEvent do
   describe "attributes" do
     subject { eventful_event }
 
-    it { is_expected.to respond_to(:name) }
+    it { is_expected.to respond_to(:title) }
     it { is_expected.to respond_to(:date) }
     it { is_expected.to respond_to(:time) }
     it { is_expected.to respond_to(:description) }
