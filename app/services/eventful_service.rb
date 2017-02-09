@@ -5,6 +5,6 @@ class EventfulService
   end
 
   def self.from_number_to_name(month)
-    (Time.now + ((month.to_i)-2).month).strftime("%B")
+    (Time.now + ((month.to_i)-2).month).strftime("%B") 
   end
 end
