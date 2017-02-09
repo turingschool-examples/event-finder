@@ -8,11 +8,11 @@ require "rails_helper"
 # For each event I can see the Event name, date & time, description (shortened to 140 characters), venue name (url to the venue page), venue address.
 
 RSpec.feature 'Search', type: :feature do
-  scenario "user searches for events" do
+  describe "user searches for events" do
     it 'returns matching events' do
       visit root_path
 
-      fill_in q, with: '80202'
+      fill_in "q", with: '80202'
       click_on "Find Events"
 
       expect(current_path).to eq('/search')
