@@ -3,6 +3,6 @@
   <h2><%= event.name %></h2>
   <%= event.start_time %>
   <%= event.description %>
-  <%= link_to event.venue, venue.url %>
+  <%= link_to event.venue, event.venue_url %>
   <%= event.venue_address %>
 <% end %>
