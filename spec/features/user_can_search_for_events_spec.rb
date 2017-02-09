@@ -13,7 +13,8 @@ RSpec.describe "search for events" do
 
   context "user can input data into evenfinder and search for events" do
     it "can seach for events by zip" do
-      fill_in :search_by_zip, with: "80202"
+      visit root_path
+      fill_in :q, with: "80202"
       click_on "Find Events"
 
       expect(current_path).to eq('/search')
