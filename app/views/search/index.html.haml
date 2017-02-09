@@ -1,6 +1,6 @@
-h1= #{@results.count} events for March
+h1= #{@results.events.count} events for March
 
-- @results.each do |result|
+- @results.events.each do |result|
   .event
     = result.name
     = result.date
