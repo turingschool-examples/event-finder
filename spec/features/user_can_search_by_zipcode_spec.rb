@@ -8,6 +8,7 @@ RSpec.describe "User can search by zip code" do
   end
 
   it "returns expected events" do
+    expect(page).to have_content('16 Events for March')
     expect(page).to have_content('Wayne')
   end
 end

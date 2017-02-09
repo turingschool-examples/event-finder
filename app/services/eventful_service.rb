@@ -5,10 +5,17 @@ class EventfulService
     JSON.parse(response.body, symbolize_names: true)
   end
 
-  def names
-    connect[:events][:event].map do |event|
-      event[:title]
+  def events_hash
+    events_list = {}
+    connect[:events][:event].each do |event|
+      events_list[:name] = event[:title]
+      events_list[:date_and_time] = event[:start_time]
+      events_list[:description] = event[:description] || ""
     end
+    events_list
+    binding.pry
   end
+
+  
 
 end

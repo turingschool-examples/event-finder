@@ -1,7 +1,7 @@
 class SearchController < ApplicationController
   def index
     search = EventfulService.new
-    @names = search.names
+    @names = search.events_hash
     # binding.pry
   end
 end
