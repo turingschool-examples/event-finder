@@ -15,6 +15,8 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'byebug'
   gem 'faker'
+  gem 'capybara'
+  gem 'launchy'
 end
 
 group :test do
