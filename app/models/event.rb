@@ -11,7 +11,6 @@ class Event
 
   def self.list(params)
     response = EventService.new.gather_events(params)
-    
     byebug
     .each do |event|
       new(event)
