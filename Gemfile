@@ -11,7 +11,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
-  gem 'byebug'
+  gem 'pry'
+  gem 'rspec-rails', '~> 3.5'
 end
 
 group :development do
