@@ -7,7 +7,7 @@ describe "zipcode search" do
 
     fill_in "q", with: "80202"
     click_on "Find Events"
-
+    save_and_open_page
     expect(current_path).to eq("/search")
     expect(page).to have_content("16 events for March")
 
