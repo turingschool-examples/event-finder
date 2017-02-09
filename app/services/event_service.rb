@@ -5,14 +5,12 @@ class EventService
       faraday.adapter Faraday.default_adapter
     end
     response = conn.get do |req|
-      req.params[:app_key] = "RwHdW4tXKrczPzjZ"
+      req.params[:app_key] = "RwHdW4tXKrczPzjZ"#would be hidden in a real app
       req.params[:location] = "#{zipcode}"
       req.params[:within] = 10
       req.params[:date] = "March"
       req.params[:sort_order] = 'popularity'
     end
     events = JSON.parse(response.body)['events']
-    # events = JSON.parse(response.body)
   end
-
 end
