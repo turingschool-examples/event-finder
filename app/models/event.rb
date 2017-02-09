@@ -2,18 +2,18 @@ class Event
 
   attr_reader :start_time,
               :description,
-              :name,
+              :title,
               :venue_address,
               :venue_name,
               :venue_url
 
   def initialize(raw_event)
-    @description    = raw_event['description']
-    @start_time     = raw_event['start_time']
-    @name           = raw_event['title']
-    @venue_address  = raw_event['venue_address']
-    @venue_name     = raw_event['venue_name']
-    @venue_url      = raw_event['venue_url']
+    @description    = raw_event[:description]
+    @start_time     = raw_event[:start_time]
+    @title           = raw_event[:title]
+    @venue_address  = raw_event[:venue_address]
+    @venue_name     = raw_event[:venue_name]
+    @venue_url      = raw_event[:venue_url]
   end
 
   def self.find_all_by_zip(zip)

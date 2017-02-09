@@ -7,6 +7,15 @@
 require 'rails_helper'
 
 describe 'User' do
+
+   before do
+    VCR.insert_cassette 'user_searches_by_zip', record: :new_episodes
+  end
+
+  after do
+    VCR.eject_cassette
+  end
+
   context 'searches by zip code' do
     it 'sees events in March sorted by popularity' do
       visit root_path
@@ -15,6 +24,8 @@ describe 'User' do
 
       expect(current_path).to eq search_path
       expect(page).to have_content '16 events for March'
+
+      
       
 
     end

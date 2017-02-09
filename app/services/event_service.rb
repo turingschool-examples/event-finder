@@ -14,6 +14,6 @@ class EventService
       req.params['page_size'] =   16
     end
 
-    JSON.parse(response.body)['events']['event']
+    JSON.parse(response.body, symbolize_names: true)[:events][:event]
   end
 end
