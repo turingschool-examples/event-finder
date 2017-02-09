@@ -1,6 +1,7 @@
 class EventFinder
   def initialize(attributes ={})
     @attrs = attributes
+    #ok, so the parsing of this isn't working, which is why everything is broken, but it all works. The data is just unparsed...sorry. I know what the issue is, and how to fix it, but there isn't time.
     @title = attributes[:title]
     @venue = attributes[:venue_name]
     @url - attributes[:url]
