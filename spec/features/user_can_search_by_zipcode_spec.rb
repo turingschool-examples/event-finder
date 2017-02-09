@@ -1,14 +1,14 @@
 require 'rails_helper'
 
 RSpec.describe "User can search by zip code" do
-  context "returns expected events" do
-    it "shows names" do
-      visit '/'
-      fill_in :q, :with => "80202"
-      click_button "Find Events"
+  before do
+    visit '/'
+    fill_in :q, :with => "80202"
+    click_button "Find Events"
+  end
 
-      expect(path).to eq('/search')
-    end
+  it "returns expected events" do
+    expect(page).to have_content('Wayne')
   end
 end
 
