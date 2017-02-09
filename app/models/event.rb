@@ -17,7 +17,7 @@ class Event
     response = EventService.new.gather_events(params)
     results = Hash.from_trusted_xml(response.body)
 
-    results["search"]["events"]["event"].each do |event|
+    results["search"]["events"]["event"].map do |event|
       new(event)
     end
   end
