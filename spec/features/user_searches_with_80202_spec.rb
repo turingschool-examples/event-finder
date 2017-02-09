@@ -1,6 +1,6 @@
 describe "User" do
   it "searches with 80202" do
-    visit home_path
+    visit root_path
 
     fill_in "search", with: '80202'
     click_on "Find Events"
