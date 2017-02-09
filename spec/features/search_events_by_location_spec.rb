@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe 'Event Search by location' do
   scenario 'When zip code entered into search box' do
     # As a user, 
-    visit root path
+    visit root_path
 
     # When I fill in the search with 80202, 
     within('.navbar') do
