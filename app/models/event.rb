@@ -9,14 +9,14 @@ class Event
 
   def initialize(raw_event)
     @name = raw_event[:name]
-    @datetime = raw_event[:]
-    @description = raw_event[:]
-    @venue_name = raw_event[:]
-    @venue_url = raw_event[:]
-    @venue_address = raw_event[:]
+    @datetime = raw_event[:tbd]
+    @description = raw_event[:tbd]
+    @venue_name = raw_event[:tbd]
+    @venue_url = raw_event[:tbd]
+    @venue_address = raw_event[:tbd]
   end
 
-  def find_by_zip(zipcode)
+  def self.find_by_zip(zipcode)
     EventService.find_by_zip(zipcode).map do |raw_event|
       new(raw_event)
     end
