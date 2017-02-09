@@ -9,7 +9,6 @@ RSpec.describe EventFinderService do
         
         event = raw_events.first
         expect(event).to be_a(Array)
-        
     end
   end
 end
