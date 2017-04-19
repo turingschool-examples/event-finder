@@ -4,7 +4,7 @@ Run through the standard Rails setup.
 
 ```
 $ bundle install
-$ rake db:{create,migrate}
+$ rake db:{create,migrate,seed}
 $ rails s
 ```
 
